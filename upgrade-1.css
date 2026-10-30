@@ -1,0 +1,32 @@
+/* Week Tracker v7 upgrade layer: new look, personalisation, capture */
+:root{--font:'Plus Jakarta Sans',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--lh:1.4;--bg:#EDF2F1;--ln:#D3DEDC;--ac:#0E6B6B;--acs:#D9EEEC;--hero:#0E4F52;--eb:#E0A33A;--sh:none}
+body{font-family:var(--font);line-height:var(--lh)}
+h1{font-size:1.7rem;letter-spacing:-.03em}
+h2,.lab{text-transform:none;letter-spacing:0;font-size:.95rem;font-weight:700}
+.lab{color:var(--mut)}.lab.b{color:var(--ac)}
+.card{border-radius:22px;padding:16px 16px 16px 18px;box-shadow:none}
+.card::before{width:4px;top:16px;bottom:16px;left:0;border-radius:0 4px 4px 0}
+.blk{border-radius:18px;box-shadow:none}
+.hero{border-radius:26px;padding:20px 20px 18px}
+.hero .t{font-size:1.7rem;letter-spacing:-.02em}
+.btn,.chips button,.hbtn{border-radius:14px}
+.chips button{border-radius:99px}
+nav.tabs{background:transparent;border:0;pointer-events:none;padding:0 12px calc(10px + env(safe-area-inset-bottom,0px))}
+nav.tabs div{pointer-events:auto;background:var(--nav,var(--sf));border:1px solid var(--ln);border-radius:26px;box-shadow:0 8px 28px rgba(10,30,30,.16)}
+nav.tabs button{min-height:58px}
+nav.tabs button[aria-current=page] span{box-shadow:none;background:var(--acs);border-radius:99px;padding:2px 12px}
+.fab{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+.fab2{position:fixed;right:20px;bottom:calc(146px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:1px solid var(--ln);background:var(--sf);color:var(--ac);font-size:20px;z-index:19;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.ux-why{margin-top:6px}
+.ux-act{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.ux-sheet{position:fixed;inset:0;z-index:40;background:rgba(5,15,15,.45);display:flex;align-items:flex-end}
+.ux-sheet[hidden]{display:none}
+.ux-sheet>div{width:100%;max-width:640px;margin:0 auto;background:var(--sf);border-radius:26px 26px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px))}
+.ux-sheet textarea,.ux-sheet select{width:100%;border:1px solid var(--ln);border-radius:14px;padding:10px;background:var(--bg);margin-top:8px;min-height:44px}
+.ux-sheet textarea{min-height:96px}
+.ux-item{display:flex;gap:8px;align-items:flex-start;padding:8px 0;border-top:1px solid var(--ln)}
+.ux-item p{flex:1;white-space:pre-wrap;overflow-wrap:anywhere}
+:root[data-hc]{--mut:#33404d;--ln:#6b7785}
+:root[data-hc][data-dk]{--mut:#d3deef;--ln:#8aa0c4}
+:root[data-rm] *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
