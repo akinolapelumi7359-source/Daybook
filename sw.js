@@ -12,4 +12,4 @@ self.addEventListener('notificationclick',e=>{
     if(cl.length){cl[0].postMessage({wtck:1,id:d.id,t:d.t,a:a==='open'?'':a});return cl[0].focus()}
     return self.clients.openWindow('./index.html?ck='+encodeURIComponent(d.id)+'&t='+d.t+(a==='open'?'':'&a='+a));
   }));
-});
+}); 
